@@ -112,3 +112,7 @@ kramed:
   breaks: true
   smartLists: true
   smartypants: true
+
+aplayer:
+  meting: true
+  asset_inject: false
