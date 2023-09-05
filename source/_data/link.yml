@@ -21,3 +21,11 @@
       link: https://twitter.com/
       avatar: https://i.loli.net/2020/05/14/5VyHPQqR6LWF39a.png
       descr: 社交分享平台
+
+- class_name: 博客
+  class_desc: 好友博客
+  link_list:
+    - name: nYapn
+      link: https://nyapn.github.io/
+      avatar: https://nyapn.github.io/img/head.jpg
+      descr: （￣︶￣）↗巨佬
