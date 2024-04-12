@@ -917,7 +917,7 @@ inject:
     - <link rel="stylesheet" href="/Cx330-502-Blogs/files_/css/mycss.css">
     # - <link rel="stylesheet" href="/xxx.css">
   bottom:
-    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
+#    - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
     # - <script src="xxxx"></script>
 
 # CDN

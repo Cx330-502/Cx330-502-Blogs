@@ -117,3 +117,12 @@ kramed:
 aplayer:
   meting: true
   asset_inject: false
+
+encrypt: # hexo-blog-encrypt
+  abstract: 有东西被加密了, 请输入密码查看.
+  message: 加密内容，叫爸爸就给你看
+  tags:
+  - {name: 加密, password: Cx330-502}
+  theme: Shrink
+  wrong_pass_message: 是不是没叫爸爸？
+  wrong_hash_message: 啊吧啊吧~~~
