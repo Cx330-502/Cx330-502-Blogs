@@ -996,5 +996,5 @@ CDN:
     # prismjs_autoloader:
     # artalk_js:
     # artalk_css:
-    # busuanzi:
+    busuanzi: https://busuanzi.icodeq.com/busuanzi.pure.mini.js
     # abcjs_basic_js:
