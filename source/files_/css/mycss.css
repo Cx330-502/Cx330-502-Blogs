@@ -43,16 +43,36 @@
 /*毛玻璃后部分颜色不清楚*/
 /*版权说明标题*/
 #post .post-copyright .post-copyright-meta {
-  color: #3d89bb;
+    color: #3d89bb;
 }
 /*版权说明文字*/
 a {
-  color: #718197;
+    color: #718197;
 }
 /*正文*/
 #article-container p {
-  font-weight: 500;
+    font-weight: 500;
 }
+/*引用块*/
+blockquote {
+    color: #384e67;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.4em;
+}
+h4 {
+    font-size: 1.3em;
+}
+h5 {
+    font-size: 1.2em;
+}
+h6 {
+    font-size: 1.1em;
+}
+
 /*加密插件更改*/
 .hbe-input-field-shrink:focus + .hbe-input-label-shrink .hbe-input-label-content-shrink,
 .input--filled .hbe-input-label-shrink .hbe-input-label-content-shrink {
