@@ -94,6 +94,12 @@ cover:
      - /files_/pics/default_pics/5.jpg
      - /files_/pics/default_pics/6.jpg
      - /files_/pics/default_pics/7.jpg
+     - /files_/pics/default_pics/8.jpg
+     - /files_/pics/default_pics/9.jpg
+     - /files_/pics/default_pics/10.jpg
+     - /files_/pics/default_pics/11.jpg
+     - /files_/pics/default_pics/12.jpg
+     - /files_/pics/default_pics/13.jpg
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
@@ -214,7 +220,7 @@ footer:
   owner:
     enable: true
     since: 2023
-  custom_text: welcome to my <a href="https://cx330-502.github.io/">blog</a>!
+  custom_text: welcome to my <a href="https://cx330-502.top/">blog</a>!
   copyright: true # Copyright of theme and framework
 
 # aside (側邊欄)
