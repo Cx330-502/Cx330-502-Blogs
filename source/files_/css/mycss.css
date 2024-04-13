@@ -77,13 +77,13 @@ h6 {
 /*加密插件更改*/
 .hbe-input-field-shrink:focus + .hbe-input-label-shrink .hbe-input-label-content-shrink,
 .input--filled .hbe-input-label-shrink .hbe-input-label-content-shrink {
-	color: #77c3da !important;
+	color: #2b5064 !important;
 	-webkit-transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
 	transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
 }
 
 .hbe-input-label-shrink::after {
-	background: #6f9c45;
+	background: #30dada;
 }
 /* 页脚footer */
 /* 渐变色滚动动画 */
