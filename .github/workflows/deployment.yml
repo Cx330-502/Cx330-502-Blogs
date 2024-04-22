@@ -44,7 +44,8 @@ jobs:
         REPO: github.com/Cx330-502/Cx330-502-Blogs
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        cd ./public && git init && git add .
+        cd ./public && touch CNAME && echo 'diary.cx330-502.top' > CNAME
+        git init && git add .
         git config --global user.name $GIT_NAME
         git config --global user.email $GIT_EMAIL
         git commit -m "Site deployed by GitHub Actions"
