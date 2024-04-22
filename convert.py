@@ -15,7 +15,8 @@ def convert_markdown_mermaid_code_to_hexo_mermaid_code(file_path, repo0):
         if i + 2 < len(content) and content[i] == '`' and content[i + 1] == '`' and content[i + 2] == '`' and flag:
             content = content[:i] + '{% endmermaid %}' + content[i + 3:]
             flag = False
-    content = content.replace('(./../../files_/pics/', '(/' + repo0 + '/files_/pics/')
+#     content = content.replace('(./../../files_/pics/', '(/' + repo0 + '/files_/pics/')
+    content = content.replace('(./../../files_/pics/', '(/files_/pics/')
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(content)
 
