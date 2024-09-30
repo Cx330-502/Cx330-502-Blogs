@@ -35,6 +35,7 @@ def convert_hexo_picture_code_to_markdown_picture_code(file_path, repo0):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     content = content.replace('(/' + repo0 + '/files_/pics/', '(./../../files_/pics/')
+    content = content.replace('"/' + repo0 + '/files_/pics/', '"./../../files_/pics/')
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(content)
 
@@ -44,6 +45,7 @@ def convert_markdown_picture_code_to_hexo_picture_code(file_path, repo0):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
     content = content.replace('(./../../files_/pics/', '(/' + repo0 + '/files_/pics/')
+    content = content.replace('"./../../files_/pics/', '"/' + repo0 + '/files_/pics/')
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(content)
 
