@@ -4,6 +4,7 @@ date: 2024-12-01 01:32:49
 updated: 2024-12-01 01:50:05
 tags:
   - TODOs
+  - 持续更新
 categories: TODOs
 keywords:
   - TODOs
@@ -37,6 +38,7 @@ abcjs:
 + 波斯王子失落的王冠
 + FF16
 + 光明记忆无限
++ 瑞奇与叮当：时空跳转
 
 #### To finish pics
 
@@ -46,6 +48,7 @@ abcjs:
 ### To Write
 
 + 阳泉
++ 张家口
 
 ### TO Expand
 
