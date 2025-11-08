@@ -35,8 +35,26 @@ jobs:
         node -v
         npm i -g hexo-cli
         npm i
+
+        # --- Start of Magic Script ---
+        echo "Restructuring asset folders for Hexo..."
+        # 遍历所有年月文件夹 (例如 source/_posts/2023-09/)
+        for month_dir in source/_posts/*/ ; do
+          # 如果该目录下存在 assets 文件夹
+          if [ -d "${month_dir}assets" ]; then
+            echo "Processing assets in ${month_dir}"
+            # 将 assets 文件夹里的所有内容 (即各个文章名文件夹) 移动到上一层 (年月) 目录
+            mv "${month_dir}assets"/* "${month_dir}"
+            # 删除现在已经空了的 assets 文件夹
+            rmdir "${month_dir}assets"
+          fi
+        done
+        echo "Asset folder restructuring complete."
+        # --- End of Magic Script ---
+
         hexo clean
         hexo g
+
     - name: Deploy to Github Pages
       env:
         GIT_NAME: Cx330-502
