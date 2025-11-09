@@ -128,3 +128,7 @@ encrypt: # hexo-blog-encrypt
   theme: Shrink
   wrong_pass_message: 是不是没叫爸爸？
   wrong_hash_message: 啊吧啊吧~~~
+
+markdown:
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
