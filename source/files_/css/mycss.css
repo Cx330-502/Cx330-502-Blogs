@@ -1,17 +1,19 @@
-/* 1. 修复了这里的开头注释语法错误 (原来少了一个 /) */
 /* 强制统一字体渲染，解决 Mac 下字体过粗 */
 body {
-  -webkit-font-smoothing: antialiased; /* 让 Mac 字体变细 */
+  -webkit-font-smoothing: antialiased; /* 让 Mac 字体变细，看起来更精致 */
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 即使在深色背景下也保持正常字重 */
-#article-container, .layout_page, .layout_post {
+
+#article-container p, 
+.layout_page, 
+.layout_post,
+.recent-post-info .content {
   font-weight: 400 !important; 
 }
 
 /* ==================
-   毛玻璃特效区域
+   毛玻璃特效区域 
    ================== */
 
 /* 侧边栏整体背景透明 */
@@ -19,34 +21,23 @@ body {
     background: rgba(255, 255, 255, 0);
 }
 
-/* 侧边栏卡片：强制覆盖默认白色，增加 !important */
-#aside-content .card-widget,
-#aside-content > .card-widget:first-child {
+/* 侧边栏卡片 */
+#aside-content .card-widget {
     background: rgba(255, 255, 255, 0.7) !important;
-    backdrop-filter: blur(10px); /* 增加真实的模糊滤镜 */
-    -webkit-backdrop-filter: blur(10px);
 }
 
-/* 首页除了置顶文章外的区域 */
 .layout > div:first-child:not(.recent-posts) {
     background: rgba(255, 255, 255, 0.7) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
-/* ！！！核心修复：首页文章卡片！！！ */
-/* 加上 !important 防止被主题默认样式覆盖 */
-#recent-posts > .recent-post-item {
+
+.recent-post-item {
     background: rgba(255, 255, 255, 0.7) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 /* 顶部导航栏 */
 #page-header.nav-visible #nav {
     background: rgba(255, 255, 255, 0.7) !important;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
 }
 
 /* 搜索框美化 */
@@ -84,12 +75,6 @@ a {
     color: #718197;
 }
 
-/* ！！！核心修复：正文加粗问题！！！ */
-/* 你之前这里写的是 500，导致 Mac 上全是粗体。改成 400 即可 */
-#article-container p {
-    font-weight: 400 !important; 
-}
-
 /* 引用块 */
 blockquote {
     color: #384e67;
@@ -107,14 +92,13 @@ h6 { font-size: 1.1em; }
    其他插件与滚动条
    ================== */
 
-/* 加密插件更改 */
+/* 加密插件 */
 .hbe-input-field-shrink:focus + .hbe-input-label-shrink .hbe-input-label-content-shrink,
 .input--filled .hbe-input-label-shrink .hbe-input-label-content-shrink {
     color: #2b5064 !important;
     -webkit-transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
     transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
 }
-
 .hbe-input-label-shrink::after {
     background: #30dada !important;
 }
