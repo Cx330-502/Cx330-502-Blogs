@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>52Hz的鲸歌 - 一些随便写写的~</title><meta name="author" content="Cx330-502"><meta name="copyright" content="Cx330-502"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我与春风皆过客，你携秋水揽星河">
+<meta property="og:type" content="website">
+<meta property="og:title" content="52Hz的鲸歌">
+<meta property="og:url" content="https://diary.cx330-502.top/page/5/index.html">
+<meta property="og:site_name" content="52Hz的鲸歌">
+<meta property="og:description" content="我与春风皆过客，你携秋水揽星河">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://diary.cx330-502.top/files_/pics/avatars/1.jpg">
+<meta property="article:author" content="Cx330-502">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://diary.cx330-502.top/files_/pics/avatars/1.jpg"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://diary.cx330-502.top/page/5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!true && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Cx330-502","link":"链接: ","source":"来源: 52Hz的鲸歌","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '52Hz的鲸歌',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'home'
+}</script><link rel="stylesheet" href="/files_/css/mycss.css"><meta name="generator" content="Hexo 6.3.0"></head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="web_bg" style="background-image: url(/files_/pics/bg-cover/3.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/files_/pics/avatars/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">77</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group hide"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/files_/pics/bg-cover/3.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">52Hz的鲸歌</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><span class="site-page group hide"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">52Hz的鲸歌</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/Cx330-502" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1175963382zx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2024/07/24/2024-07/2024-07-24%E9%9B%A8/" title="雨"><img class="post-bg" src="/files_/pics/default_pics/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="雨"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/24/2024-07/2024-07-24%E9%9B%A8/" title="雨">雨</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-24T15:52:27.000Z" title="发表于 2024-07-24 23:52:27">2024-07-24</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-24T15:54:28.000Z" title="更新于 2024-07-24 23:54:28">2024-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8F%91%E7%94%B5/">发电</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content">我是一个喜欢雨的人 雨打屋檐敲石栏 棋盘为谁展 小雨淅淅，穿林打叶，诉说一段段未尽故事 暴雨倾盆，与风成舞，不知掩埋了多少叹息 雨，将世界分割成孤岛，相近的人更加靠近，远方的人愈发远离 伞外的嘈杂更衬得伞内的安静，下雨天，哪怕再大的说话声也显得空旷 那种无边的孤独，我喜欢 可惜，北京少雨 你看，这雨生于天，死于地，中间的过程就是一生 下雨时的安静，总会让我脑中闪现一些记忆的片段，恍惚间，似乎梦回从前   依稀记得一个雨天，我和表哥在公交站躲雨，没有雨衣，最后他骑着电瓶车把我送回家，然后我有了第一个QQ号 ……   依稀记得一个雨天，我和爸妈吵完架后一个人离开家，坐上大巴，我说我不想呆了，想去外公家 ……   依稀记得许多个雨天，大雨打在教学楼上，风吹起阵阵雾气，过道里站着穿各色雨衣的家长，该放学了 ……   依稀记得许多个雨天，过道转角处，水流不停的低，拯救了不知道多少无聊的课程 ……   依稀记得许多个雨天，艺术楼的楼道上，小溪从四楼流到二楼 ……   依稀记得许多个雨天，我走在雨里 ……   可惜，北京少雨 风雨打尽红墙和绿瓦 丹青留下明日的黄花 转眼间，我竟然已经在工作了 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/07/12/2024-07/2024-07-12%E4%B8%80%E7%82%B9%E7%A2%8E%E7%A2%8E%E5%BF%B5/" title="一点碎碎念"><img class="post-bg" src="/files_/pics/default_pics/13.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一点碎碎念"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/12/2024-07/2024-07-12%E4%B8%80%E7%82%B9%E7%A2%8E%E7%A2%8E%E5%BF%B5/" title="一点碎碎念">一点碎碎念</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-12T13:31:23.000Z" title="发表于 2024-07-12 21:31:23">2024-07-12</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-13T08:00:00.000Z" title="更新于 2024-07-13 16:00:00">2024-07-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8F%91%E7%94%B5/">发电</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content">在那篇中道崩殂的年中总结开头，我写下了：  以宇宙的尺度而言 我们生于星辰 也终将归于星辰 别难过，我们终将重逢  在一连串的破防发生之前，面对毕业季的许多告别，我表现得相当豁达。很多人或许再难相见，但至少还有一个相当正式的告别 . . . . . . 时间步入七月，小学期开发越来愈紧、傻逼移动背刺、和一位朋友走向陌路 . . . . . . 哪怕过了一个多星期，现在想来仍然堪称噩梦：7月2号准备答辩直到凌晨，第一场的答辩却被某个傻逼老师一通🐕叫，忍着疲惫投递了一天简历；7月4号又是一大早起来，准备好中午去面试的保底实习却再度让我失望 下午通勤一个小时，走出高碑店站通道的瞬间，手机信号屏蔽，让我不禁怀疑朝阳还他妈有这么偏远的地方。好在和从灿的交流很不错，多少改善了一些我的心境。 马不停蹄地赶回宿舍开始做另一家公司的笔试，和同学外出吃饭时感觉世界都是灰色的… 好在回宿舍没多久，就又一次接到了从灿的电话。这家通勤1h+，原本在我心中就算让我去我都不乐意的公司，此刻通勤却只是唯一的缺点 第二天，再次坐上了往高碑店站的地铁。车过四惠，驶向四惠东，热烈而浓郁的阳光涌进，我确切的相信，我的...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/07/07/2024-07/2024-07-07%E5%BE%85%E5%86%99%E9%80%89%E9%A2%98/" title="待写选题"><img class="post-bg" src="/files_/pics/default_pics/3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="待写选题"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/07/2024-07/2024-07-07%E5%BE%85%E5%86%99%E9%80%89%E9%A2%98/" title="待写选题">待写选题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-07T10:06:27.000Z" title="发表于 2024-07-07 18:06:27">2024-07-07</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-07T10:10:08.000Z" title="更新于 2024-07-07 18:10:08">2024-07-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8F%91%E7%94%B5/">发电</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content">其实有好多待写的选题，但是一直没动笔🤤🤤🤤  日常方面  前段时间破大防的过程and结果 乱七八糟的碎碎念   游戏方面  游戏与色情 游戏与社交 …    日常方面的准备等签完合同尘埃落定开始动笔，游戏方面…其实这些选题都是很早就想出来了，但是一方面是我自己也没有想清楚应该怎么系统的去分析，另一方面在于今年又电子ed了，今年到目前为止对上电波的新游戏还就只有死亡搁浅 </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/07/02/2024-07/2024-07-02%E6%88%91%E5%8F%88%E6%B4%BB%E4%BA%86/" title="我又活了"><img class="post-bg" src="/files_/pics/default_pics/8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="我又活了"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/07/02/2024-07/2024-07-02%E6%88%91%E5%8F%88%E6%B4%BB%E4%BA%86/" title="我又活了">我又活了</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-02T08:45:53.000Z" title="发表于 2024-07-02 16:45:53">2024-07-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-02T08:53:47.000Z" title="更新于 2024-07-02 16:53:47">2024-07-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8F%91%E7%94%B5/">发电</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content">之前的年中总结写了一半，有点写不下去了，就这样咕咕了吧(doge 咱就是说，下半年第一天和第二天是不是上的强度有点高了md，怎么实习、小学期、考研、人际关系没一个顺的奶奶滴，昨天晚上真给我整破防了啊（有多久没这样全方面破防过了😡😡😡 所以其实每次到这种时候都会非常感谢前女友😏她确实让我学会了做任何事情都不要后悔，欣然悦纳曾经的自己和未来的自己。 我总是可以这样的：和世界和解，更是和自己和解 就是说，很多事情，  我本来也没有努力过，那我就此摆烂这很合理吧 还有的我可能已经很努力了 . . . . . . 不是我都努力过了，有问题也不怪我了啊😏  行吧，最后骂一句傻逼移动 这下该准备考研实习两手抓了🤤🤤🤤 </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/06/27/2024-06/2024-06-27%E8%BF%9F%E5%88%B0%E4%BA%86%E4%B8%80%E5%91%A8/" title="迟到了一周"><img class="post-bg" src="/files_/pics/default_pics/5.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="迟到了一周"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/06/27/2024-06/2024-06-27%E8%BF%9F%E5%88%B0%E4%BA%86%E4%B8%80%E5%91%A8/" title="迟到了一周">迟到了一周</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-06-27T08:45:32.000Z" title="发表于 2024-06-27 16:45:32">2024-06-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-06-27T08:45:32.000Z" title="更新于 2024-06-27 16:45:32">2024-06-27</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8F%91%E7%94%B5/">发电</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content"> 以宇宙的尺度而言 我们生于星辰 也终将归于星辰 别难过，我们终将重逢  迟到了一个星期的年终总结，诸多纠缠也终于还是画上了句点。 说来好笑，上一篇写的就是加菲猫。 其实也很感慨，记得一年前，独自循环着《君不见》走上去了鬼笑石的行程。当时和一个朋友还挺好，和一个喜欢的女生却只是关系一般 . . . . . . 一年后，情况反转，和那个女生成了关系不错的朋友，和那位朋友却再没了联系 —— 诸多细节已经不想再多提及，日后再看时大概还会记得吧；如果忘了，或许也是不愿再忆起 所以，去年是《君不见》，那么今年呢？ 至今还在上分的《皎皎》？亦或是初见便惊艳的《黄金时代》？ 两者似乎都是很不错的选择，但却总觉得不太合适，相比较《皎皎》的缱绻潇洒、《黄金时代》的声嘶力竭，《烈火青莲》的寂灭与沉默更符合我此刻的心态罢 常应常静，常清静矣 顺应四时，便可常清静矣，这是无为法的含义，但《烈火青莲》却不止于此。 </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/06/05/2024-06/2024-06-05/" title="加菲猫"><img class="post-bg" src="/files_/pics/default_pics/6.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="加菲猫"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/06/05/2024-06/2024-06-05/" title="加菲猫">加菲猫</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-06-05T04:05:59.000Z" title="发表于 2024-06-05 12:05:59">2024-06-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-06-05T04:09:36.000Z" title="更新于 2024-06-05 12:09:36">2024-06-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8F%91%E7%94%B5/">发电</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content">加菲猫走丢后被卖到了宠物店，担心乔恩找不到它，思念成疾 直到有一天，乔恩走进宠物店 加菲猫和乔恩圆满团圆  加菲猫独自对着夕阳说：“我永远不会问乔恩，那天为什么会走进宠物店” 可是同样的， 乔恩也没有和加菲猫说，为了它，找遍了一座城  </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/05/30/2024-05/2024-05-30/" title="啊吧啊吧"><img class="post-bg" src="/files_/pics/default_pics/12.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="啊吧啊吧"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/05/30/2024-05/2024-05-30/" title="啊吧啊吧">啊吧啊吧</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-30T13:33:09.000Z" title="发表于 2024-05-30 21:33:09">2024-05-30</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-30T13:42:11.000Z" title="更新于 2024-05-30 21:42:11">2024-05-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8F%91%E7%94%B5/">发电</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content">闲暇时和一个朋友随便聊了聊，从课程到暑期实习，再到一些更远的规划 … 其实会深刻的感觉到，她比我更有想法，也更愿意为之实践。早在一年前，甚至更久之前，她就已经明确了自己的目标，并且去大胆尝试。而我却总是沉浸在”我想“，游戏这条路怎么样呢？找个实习看看环境怎么样呢？毕业后究竟要怎么样呢？. . . . . . . 于是，不断地想着，我错过了所有机会，然后对着仅剩的那条路说：哦，这个好像也不错 是不错呀，大家都是这么做这么说的：大家都说得读个研，嗯，那就考吧…；大家都说互联网太不稳定了，嗯，那就试试进体制呗…；大家都说留京成本太高了，嗯，那就回家呗… 哈哈哈哈  那烛火未明摇曳满地的冷清 他摇落了繁花空等谁记起 为梦送行的人 仍未散去 ​							——河图 《第三十八年夏至》  </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/05/16/2024-05/2024-05-16/" title="啊吧啊吧"><img class="post-bg" src="/files_/pics/default_pics/2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="啊吧啊吧"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/05/16/2024-05/2024-05-16/" title="啊吧啊吧">啊吧啊吧</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-16T08:03:58.000Z" title="发表于 2024-05-16 16:03:58">2024-05-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-16T08:25:26.000Z" title="更新于 2024-05-16 16:25:26">2024-05-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8F%91%E7%94%B5/">发电</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content"> 绳子和棍棒是人类最早发明的两种工具，棍棒可以让邪恶之物远离，绳子将良善之物拉近。它们是人类最早的朋友，也是我们的创造。有人的地方 一定也有绳子和棍棒。 ——安部公房 《绳》  两年多前，导师说过，”网络放大了世间的每一个悲剧，但请大家克制自己的同情，因为悲剧无处不在“。当时因为一些事情深有感触，后来却逐渐淡忘。也曾多次在网络上表达过自己的不忿、同情。 互联网见证了无数悲欢。 时过境迁，当我又一次关闭了全是推送胖猫的软件后，无意间点开了《黑神话悟空》的 TGA 宣传片。  ”师父，你说这世上是善人多 还是恶人多“ “自是善人多” “那为何这世道从未太平，恶人总是横行无忌” ”因为不分好歹的善不是善，是恶的帮凶“  在《死亡搁浅》中，杀人的枪支最终从棍棒变为绳子，链接世界。 在现实中，链接世界的绳子，最终却变成杀人的棍棒。 泛滥的同情和悲悯，最终不过化作棍棒，将所有的悲欢，稀释成闹剧。 </div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/05/02/2024-05/2024-05-02/" title="目送"><img class="post-bg" src="/files_/pics/default_pics/13.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="目送"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/05/02/2024-05/2024-05-02/" title="目送">目送</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-02T11:14:34.000Z" title="发表于 2024-05-02 19:14:34">2024-05-02</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-02T11:15:57.000Z" title="更新于 2024-05-02 19:15:57">2024-05-02</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8F%91%E7%94%B5/">发电</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content"> 我慢慢地、慢慢地了解到，所谓父女母子一场，只不过意味着，你和他的缘分就是今生今世不断地在目送他的背影渐行渐远。你站在小路的这一端，看着他逐渐消失在小路转弯的地方，而且，他用背影告诉你：不必追。 ――龙应台《目送》  </div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2024/04/29/2024-04/2024-04-29-%E4%BC%BC%E6%98%AF%E6%95%85%E4%BA%BA%E6%9D%A5/" title="似是故人来"><img class="post-bg" src="/files_/pics/default_pics/8.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="似是故人来"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/04/29/2024-04/2024-04-29-%E4%BC%BC%E6%98%AF%E6%95%85%E4%BA%BA%E6%9D%A5/" title="似是故人来">似是故人来</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-04-28T17:36:50.000Z" title="发表于 2024-04-29 01:36:50">2024-04-29</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-04-28T17:53:55.000Z" title="更新于 2024-04-29 01:53:55">2024-04-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%97%A5%E5%B8%B8/">日常</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/">啊吧啊吧</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E5%B8%B8/">日常</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%9D%82%E8%B0%88/">杂谈</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%97%A5%E8%AE%B0/">日记</a></span></div><div class="content"> 青衫烟雨客，似是故人来  很唯美的一句诗，但其实只是来自百度的胡诌。 又一年魔幻之夜结束了。两年前，似乎是经历着N重打击，魔幻之夜一次次推迟，各种事情纷扰不断，剩下的只有麻木……一年前，sb学院大二下课程疯狂折磨，魔幻之夜结束第二天踩点做完课下实验，课上实验除了打表以外爆零，记得很清楚…… 今年似乎截然不同，没有什么烦恼的事，每天都很悠闲，有空玩喜欢的游戏，有空经常和朋友聚，有空做自己喜欢的事，很棒👍👍👍 但是，似乎有一些隐藏很深的东西，还是没变，比如……麻木，很多时候其实并不知道自己在干什么，只是做一些似乎是我该做的事情，每一天似乎都只是无限重叠，不多的开心成了分割时间的重要标识。 麻木，已是常态。  我似故人，不是故人  一年、两年里，我丢掉了太多东西：热爱、执着……多了很多漠视、麻木，或许这是成长，亦或者，只是生命的倒退。 啊吧啊吧抒情结束，我该滚去改明天答辩的PPT了[doge] </div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/4/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/#content-inner">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/#content-inner">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/#content-inner">8</a><a class="extend next" rel="next" href="/page/6/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/files_/pics/avatars/1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Cx330-502</div><div class="author-info-description">我与春风皆过客，你携秋水揽星河</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">77</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Cx330-502"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Cx330-502" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:1175963382zx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">52Hz的鲸歌</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025/11/29/2025-11/2025-11-29-%E6%AD%A6%E6%B1%89/" title="武汉"><img src="/files_/pics/default_pics/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="武汉"/></a><div class="content"><a class="title" href="/2025/11/29/2025-11/2025-11-29-%E6%AD%A6%E6%B1%89/" title="武汉">武汉</a><time datetime="2025-11-28T16:04:35.000Z" title="发表于 2025-11-29 00:04:35">2025-11-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/19/2025-11/2025-11-19-npu-top/" title="npu-top"><img src="/files_/pics/default_pics/2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="npu-top"/></a><div class="content"><a class="title" href="/2025/11/19/2025-11/2025-11-19-npu-top/" title="npu-top">npu-top</a><time datetime="2025-11-19T09:35:20.000Z" title="发表于 2025-11-19 17:35:20">2025-11-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/13/2025-11/2025-11-13-%E6%97%A9%E6%9C%9F%E5%A4%B1%E8%B4%A5/" title="早期失败"><img src="/files_/pics/default_pics/13.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="早期失败"/></a><div class="content"><a class="title" href="/2025/11/13/2025-11/2025-11-13-%E6%97%A9%E6%9C%9F%E5%A4%B1%E8%B4%A5/" title="早期失败">早期失败</a><time datetime="2025-11-13T15:35:55.000Z" title="发表于 2025-11-13 23:35:55">2025-11-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/12/2025-11/2025-11-12-%E6%97%A9%E8%B5%B7%E5%A4%B1%E8%B4%A5/" title="早起失败"><img src="/files_/pics/default_pics/4.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="早起失败"/></a><div class="content"><a class="title" href="/2025/11/12/2025-11/2025-11-12-%E6%97%A9%E8%B5%B7%E5%A4%B1%E8%B4%A5/" title="早起失败">早起失败</a><time datetime="2025-11-12T15:37:49.000Z" title="发表于 2025-11-12 23:37:49">2025-11-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025/11/11/2025-11/2025-11-11-%E5%82%BB%E9%80%BC%E6%8F%92%E4%BB%B6/" title="傻逼插件"><img src="/files_/pics/default_pics/12.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="傻逼插件"/></a><div class="content"><a class="title" href="/2025/11/11/2025-11/2025-11-11-%E5%82%BB%E9%80%BC%E6%8F%92%E4%BB%B6/" title="傻逼插件">傻逼插件</a><time datetime="2025-11-11T07:59:24.000Z" title="发表于 2025-11-11 15:59:24">2025-11-11</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            <a class="card-more-btn" href="/categories/" title="查看更多">
+      <i class="fas fa-angle-right"></i></a>
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/TODOs/"><span class="card-category-list-name">TODOs</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%8F%91%E7%94%B5/"><span class="card-category-list-name">发电</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%91%A8%E8%AE%B0/"><span class="card-category-list-name">周记</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/"><span class="card-category-list-name">年终总结</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%84%9F%E6%85%A8/"><span class="card-category-list-name">感慨</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%85%E8%A1%8C/"><span class="card-category-list-name">旅行</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E5%B8%B8/"><span class="card-category-list-name">日常</span><span class="card-category-list-count">44</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%97%A5%E8%AE%B0/"><span class="card-category-list-name">日记</span><span class="card-category-list-count">8</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%8F%91%E7%94%B5/" style="font-size: 1.4em; color: rgb(50, 72, 50);">发电</a><a href="/tags/%E5%95%8A%E5%90%A7%E5%95%8A%E5%90%A7/" style="font-size: 1.45em; color: rgb(157, 50, 68);">啊吧啊吧</a><a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 1.42em; color: rgb(80, 50, 50);">日常</a><a href="/tags/%E5%8A%A0%E5%AF%86/" style="font-size: 1.27em; color: rgb(92, 117, 50);">加密</a><a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 1.35em; color: rgb(117, 180, 114);">游戏</a><a href="/tags/%E6%B5%8B%E8%AF%84/" style="font-size: 1.32em; color: rgb(50, 188, 194);">测评</a><a href="/tags/%E6%B8%B8%E6%88%8F%E6%B5%8B%E8%AF%84/" style="font-size: 1.3em; color: rgb(151, 50, 97);">游戏测评</a><a href="/tags/%E6%9C%80%E5%90%8E%E7%94%9F%E8%BF%98%E8%80%85/" style="font-size: 1.15em; color: rgb(89, 91, 50);">最后生还者</a><a href="/tags/%E6%84%9F%E6%85%A8/" style="font-size: 1.2em; color: rgb(83, 111, 148);">感慨</a><a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 1.22em; color: rgb(61, 50, 92);">杂谈</a><a href="/tags/%E6%BC%AB%E5%A8%81%E8%9C%98%E8%9B%9B%E4%BE%A0/" style="font-size: 1.15em; color: rgb(131, 50, 107);">漫威蜘蛛侠</a><a href="/tags/%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/" style="font-size: 1.15em; color: rgb(184, 195, 50);">年度总结</a><a href="/tags/%E6%9C%80%E7%BB%88%E5%B9%BB%E6%83%B313/" style="font-size: 1.15em; color: rgb(67, 145, 96);">最终幻想13</a><a href="/tags/Final-Fantasy/" style="font-size: 1.15em; color: rgb(50, 58, 87);">Final Fantasy</a><a href="/tags/%E8%AF%BB%E4%B9%A6/" style="font-size: 1.27em; color: rgb(196, 116, 164);">读书</a><a href="/tags/%E6%97%A5%E8%AE%B0/" style="font-size: 1.38em; color: rgb(190, 50, 155);">日记</a><a href="/tags/%E6%AD%BB%E4%BA%A1%E6%90%81%E6%B5%85/" style="font-size: 1.15em; color: rgb(50, 165, 191);">死亡搁浅</a><a href="/tags/%E5%8F%A4%E5%89%91%E5%A5%87%E8%B0%AD/" style="font-size: 1.17em; color: rgb(162, 52, 55);">古剑奇谭</a><a href="/tags/%E9%BB%91%E7%A5%9E%E8%AF%9D/" style="font-size: 1.15em; color: rgb(50, 82, 60);">黑神话</a><a href="/tags/%E6%98%9F%E4%B9%8B%E5%8D%A1%E6%AF%94/" style="font-size: 1.15em; color: rgb(167, 142, 189);">星之卡比</a><a href="/tags/%E6%97%85%E8%A1%8C/" style="font-size: 1.25em; color: rgb(55, 79, 196);">旅行</a><a href="/tags/%E6%9C%88%E8%AE%B0/" style="font-size: 1.27em; color: rgb(106, 114, 59);">月记</a><a href="/tags/%E6%A3%80%E8%AE%A8/" style="font-size: 1.15em; color: rgb(172, 50, 126);">检讨</a><a href="/tags/%E5%8F%8D%E7%9C%81/" style="font-size: 1.15em; color: rgb(55, 183, 147);">反省</a><a href="/tags/%E5%91%A8%E8%AE%B0/" style="font-size: 1.17em; color: rgb(193, 50, 190);">周记</a><a href="/tags/TODOs/" style="font-size: 1.15em; color: rgb(166, 75, 67);">TODOs</a><a href="/tags/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" style="font-size: 1.17em; color: rgb(50, 174, 142);">持续更新</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      <a class="card-more-btn" href="/archives/"
+            title="查看更多">
+            <i class="fas fa-angle-right"></i>
+          </a>
+    </div>
+  
+    <ul class="card-archive-list">
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/11/">
+            <span class="card-archive-list-date">
+              十一月 2025
+            </span>
+            <span class="card-archive-list-count">7</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/06/">
+            <span class="card-archive-list-date">
+              六月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/04/">
+            <span class="card-archive-list-date">
+              四月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/03/">
+            <span class="card-archive-list-date">
+              三月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/02/">
+            <span class="card-archive-list-date">
+              二月 2025
+            </span>
+            <span class="card-archive-list-count">2</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2025/01/">
+            <span class="card-archive-list-date">
+              一月 2025
+            </span>
+            <span class="card-archive-list-count">1</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/12/">
+            <span class="card-archive-list-date">
+              十二月 2024
+            </span>
+            <span class="card-archive-list-count">7</span>
+          </a>
+        </li>
+      
+        <li class="card-archive-list-item">
+          <a class="card-archive-list-link" href="/archives/2024/11/">
+            <span class="card-archive-list-date">
+              十一月 2024
+            </span>
+            <span class="card-archive-list-count">4</span>
+          </a>
+        </li>
+      
+    </ul>
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">77</div></div><div class="webinfo-item"><div class="item-name">运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2023-02-13T10:47:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">29.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-11-28T17:58:38.548Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/files_/pics/bg-cover/3.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2023 - 2025 By Cx330-502</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 6.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.2</a></span></div><div class="footer_custom_text">welcome to my <a target="_blank" rel="noopener" href="https://cx330-502.top/">blog</a>!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, {"startDelay":300,"typeSpeed":150,"backSpeed":50,"loop":true}))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  },
+  processSubtitle: (content, extraContents = []) => {
+    if (true) {
+      const sub = ["当孤独的星遇上沉默的鲸"].slice()
+
+      if (extraContents.length > 0) {
+        sub.unshift(...extraContents)
+      }
+
+      if (typeof content === 'string') {
+        sub.unshift(content)
+      } else if (Array.isArray(content)) {
+        sub.unshift(...content)
+      }
+
+      sub.length > 0 && typedJSFn.init(sub)
+    } else {
+      document.getElementById('subtitle').textContent = typeof content === 'string' ? content :
+        (Array.isArray(content) && content.length > 0 ? content[0] : '')
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  typedJSFn.processSubtitle(["当孤独的星遇上沉默的鲸"])
+}
+typedJSFn.run(subtitleType)</script></div><script id="canvas_nest" defer="defer" color="255,255,255" opacity="1" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明" data-fontsize="15px" data-random="true" async="async"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script>(() => {
+  const destroyAplayer = () => {
+    if (window.aplayers) {
+      for (let i = 0; i < window.aplayers.length; i++) {
+        if (!window.aplayers[i].options.fixed) {
+          window.aplayers[i].destroy()
+        }
+      }
+    }
+  }
+
+  const runMetingJS = () => {
+    typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+  }
+
+  btf.addGlobalFn('pjaxSend', destroyAplayer, 'destroyAplayer')
+  btf.addGlobalFn('pjaxComplete', loadMeting, 'runMetingJS')
+})()</script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>(() => {
+  const pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+  window.pjax = new Pjax({
+    elements: 'a:not([target="_blank"])',
+    selectors: pjaxSelectors,
+    cacheBust: false,
+    analytics: false,
+    scrollRestoration: false
+  })
+
+  const triggerPjaxFn = (val) => {
+    if (!val) return
+    Object.values(val).forEach(fn => {
+      try {
+        fn()
+      } catch (err) {
+        console.debug('Pjax callback failed:', err)
+      }
+    })
+  }
+
+  document.addEventListener('pjax:send', () => {
+    // removeEventListener
+    btf.removeGlobalFnEvent('pjaxSendOnce')
+    btf.removeGlobalFnEvent('themeChange')
+
+    // reset readmode
+    const $bodyClassList = document.body.classList
+    if ($bodyClassList.contains('read-mode')) $bodyClassList.remove('read-mode')
+
+    triggerPjaxFn(window.globalFn.pjaxSend)
+  })
+
+  document.addEventListener('pjax:complete', () => {
+    btf.removeGlobalFnEvent('pjaxCompleteOnce')
+    document.querySelectorAll('script[data-pjax]').forEach(item => {
+      const newScript = document.createElement('script')
+      const content = item.text || item.textContent || item.innerHTML || ""
+      Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+      newScript.appendChild(document.createTextNode(content))
+      item.parentNode.replaceChild(newScript, item)
+    })
+
+    triggerPjaxFn(window.globalFn.pjaxComplete)
+  })
+
+  document.addEventListener('pjax:error', e => {
+    if (e.request.status === 404) {
+      const usePjax = true
+      false
+        ? (usePjax ? pjax.loadUrl('/404.html') : window.location.href = '/404.html')
+        : window.location.href = e.request.responseURL
+    }
+  })
+})()</script><script async data-pjax src="https://busuanzi.icodeq.com/busuanzi.pure.mini.js"></script></div></body></html>
