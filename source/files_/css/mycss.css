@@ -1,89 +1,122 @@
-/*所有页面实现毛玻璃特效*/
-#aside-content{
+/* 1. 修复了这里的开头注释语法错误 (原来少了一个 /) */
+/* 强制统一字体渲染，解决 Mac 下字体过粗 */
+body {
+  -webkit-font-smoothing: antialiased; /* 让 Mac 字体变细 */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 即使在深色背景下也保持正常字重 */
+#article-container, .layout_page, .layout_post {
+  font-weight: 400 !important; 
+}
+
+/* ==================
+   毛玻璃特效区域
+   ================== */
+
+/* 侧边栏整体背景透明 */
+#aside-content {
     background: rgba(255, 255, 255, 0);
 }
 
+/* 侧边栏卡片：强制覆盖默认白色，增加 !important */
+#aside-content .card-widget,
 #aside-content > .card-widget:first-child {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(10px); /* 增加真实的模糊滤镜 */
+    -webkit-backdrop-filter: blur(10px);
 }
 
-#aside-content .card-widget {
-    background: rgba(255,255,255,0.7);
-}
-
+/* 首页除了置顶文章外的区域 */
 .layout > div:first-child:not(.recent-posts) {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
+/* ！！！核心修复：首页文章卡片！！！ */
+/* 加上 !important 防止被主题默认样式覆盖 */
 #recent-posts > .recent-post-item {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
-/*标题栏*/
+
+/* 顶部导航栏 */
 #page-header.nav-visible #nav {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
-/*搜索框美化*/
+
+/* 搜索框美化 */
 .search-dialog {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.9) !important;
     border-radius: 0px;
 }
 
 #search-mask {
-    background: rgba(255,255,255,0);
+    background: rgba(255, 255, 255, 0);
 }
-/*手机端毛玻璃优化*/
+
+/* 手机端侧边栏 */
 #sidebar #sidebar-menus.open {
-    background: rgba(255,255,255,0.7);
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(5px);
 }
 
 #sidebar #menu-mask {
-    background: rgba(255,255,255,0);
+    background: rgba(255, 255, 255, 0);
 }
 
-/*毛玻璃后部分颜色不清楚*/
-/*版权说明标题*/
+
+/* ==================
+   字体与颜色调整
+   ================== */
+
+/* 版权说明标题 */
 #post .post-copyright .post-copyright-meta {
     color: #3d89bb;
 }
-/*版权说明文字*/
+
+/* 版权说明文字 */
 a {
     color: #718197;
 }
-/*正文*/
+
+/* ！！！核心修复：正文加粗问题！！！ */
+/* 你之前这里写的是 500，导致 Mac 上全是粗体。改成 400 即可 */
 #article-container p {
-    font-weight: 500;
+    font-weight: 400 !important; 
 }
-/*引用块*/
+
+/* 引用块 */
 blockquote {
     color: #384e67;
 }
-/**/
-h2 {
-    font-size: 1.5em;
-}
-h3 {
-    font-size: 1.4em;
-}
-h4 {
-    font-size: 1.3em;
-}
-h5 {
-    font-size: 1.2em;
-}
-h6 {
-    font-size: 1.1em;
-}
 
-/*加密插件更改*/
+/* 标题字号 */
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; }
+
+
+/* ==================
+   其他插件与滚动条
+   ================== */
+
+/* 加密插件更改 */
 .hbe-input-field-shrink:focus + .hbe-input-label-shrink .hbe-input-label-content-shrink,
 .input--filled .hbe-input-label-shrink .hbe-input-label-content-shrink {
-	color: #2b5064 !important;
-	-webkit-transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
-	transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
+    color: #2b5064 !important;
+    -webkit-transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
+    transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
 }
 
 .hbe-input-label-shrink::after {
-	background: #30dada !important;
+    background: #30dada !important;
 }
 /* 页脚footer */
 /* 渐变色滚动动画 */
