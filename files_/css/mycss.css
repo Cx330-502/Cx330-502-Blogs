@@ -1,0 +1,278 @@
+/* 强制统一字体渲染，解决 Mac 下字体过粗 */
+body {
+  -webkit-font-smoothing: antialiased; /* 让 Mac 字体变细，看起来更精致 */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+#article-container p, 
+.layout_page, 
+.layout_post,
+.recent-post-info .content {
+  font-weight: 400 !important; 
+}
+
+/* ==================
+   毛玻璃特效区域 
+   ================== */
+
+/* 侧边栏整体背景透明 */
+#aside-content {
+    background: rgba(255, 255, 255, 0);
+}
+
+/* 侧边栏卡片 */
+#aside-content .card-widget {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+.layout > div:first-child:not(.recent-posts) {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+
+.recent-post-item {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* 顶部导航栏 */
+#page-header.nav-visible #nav {
+    background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* 搜索框美化 */
+.search-dialog {
+    background: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 0px;
+}
+
+#search-mask {
+    background: rgba(255, 255, 255, 0);
+}
+
+/* 手机端侧边栏 */
+#sidebar #sidebar-menus.open {
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(5px);
+}
+
+#sidebar #menu-mask {
+    background: rgba(255, 255, 255, 0);
+}
+
+
+/* ==================
+   字体与颜色调整
+   ================== */
+
+/* 版权说明标题 */
+#post .post-copyright .post-copyright-meta {
+    color: #3d89bb;
+}
+
+/* 版权说明文字 */
+a {
+    color: #718197;
+}
+
+/* 引用块 */
+blockquote {
+    color: #384e67;
+}
+
+/* 标题字号 */
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; }
+
+
+/* ==================
+   其他插件与滚动条
+   ================== */
+
+/* 加密插件 */
+.hbe-input-field-shrink:focus + .hbe-input-label-shrink .hbe-input-label-content-shrink,
+.input--filled .hbe-input-label-shrink .hbe-input-label-content-shrink {
+    color: #2b5064 !important;
+    -webkit-transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
+    transform: translate3d(0, 2.5em, 0) scale3d(0.655, 0.655, 1) !important;
+}
+.hbe-input-label-shrink::after {
+    background: #30dada !important;
+}
+/* 页脚footer */
+/* 渐变色滚动动画 */
+/* @-webkit-keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+#footer {
+    background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+#footer:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#footer-wrap {
+    background-color: rgba(0, 0, 0, 0);
+} */
+
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(73, 177, 245, 0.2);
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #49b1f5;
+    background-image: -webkit-linear-gradient(
+            45deg,
+            rgba(255, 255, 255, 0.4) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, 0.4) 50%,
+            rgba(255, 255, 255, 0.4) 75%,
+            transparent 75%,
+            transparent
+    );
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #49b1f5;
+}
+/* @keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+/* #web_bg {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+} */
+
+
+
+/* #web_bg {
+    background: -webkit-linear-gradient(
+            0deg,
+            rgba(247, 149, 51, 0.1) 0,
+            rgba(243, 112, 85, 0.1) 15%,
+            rgba(239, 78, 123, 0.1) 30%,
+            rgba(161, 102, 171, 0.1) 44%,
+            rgba(80, 115, 184, 0.1) 58%,
+            rgba(16, 152, 173, 0.1) 72%,
+            rgba(7, 179, 155, 0.1) 86%,
+            rgba(109, 186, 130, 0.1) 100%
+    );
+    background: -moz-linear-gradient(
+            0deg,
+            rgba(247, 149, 51, 0.1) 0,
+            rgba(243, 112, 85, 0.1) 15%,
+            rgba(239, 78, 123, 0.1) 30%,
+            rgba(161, 102, 171, 0.1) 44%,
+            rgba(80, 115, 184, 0.1) 58%,
+            rgba(16, 152, 173, 0.1) 72%,
+            rgba(7, 179, 155, 0.1) 86%,
+            rgba(109, 186, 130, 0.1) 100%
+    );
+    background: -o-linear-gradient(
+            0deg,
+            rgba(247, 149, 51, 0.1) 0,
+            rgba(243, 112, 85, 0.1) 15%,
+            rgba(239, 78, 123, 0.1) 30%,
+            rgba(161, 102, 171, 0.1) 44%,
+            rgba(80, 115, 184, 0.1) 58%,
+            rgba(16, 152, 173, 0.1) 72%,
+            rgba(7, 179, 155, 0.1) 86%,
+            rgba(109, 186, 130, 0.1) 100%
+    );
+    background: -ms-linear-gradient(
+            0deg,
+            rgba(247, 149, 51, 0.1) 0,
+            rgba(243, 112, 85, 0.1) 15%,
+            rgba(239, 78, 123, 0.1) 30%,
+            rgba(161, 102, 171, 0.1) 44%,
+            rgba(80, 115, 184, 0.1) 58%,
+            rgba(16, 152, 173, 0.1) 72%,
+            rgba(7, 179, 155, 0.1) 86%,
+            rgba(109, 186, 130, 0.1) 100%
+    );
+    background: linear-gradient(
+            90deg,
+            rgba(247, 149, 51, 0.1) 0,
+            rgba(243, 112, 85, 0.1) 15%,
+            rgba(239, 78, 123, 0.1) 30%,
+            rgba(161, 102, 171, 0.1) 44%,
+            rgba(80, 115, 184, 0.1) 58%,
+            rgba(16, 152, 173, 0.1) 72%,
+            rgba(7, 179, 155, 0.1) 86%,
+            rgba(109, 186, 130, 0.1) 100%
+    );
+} */
